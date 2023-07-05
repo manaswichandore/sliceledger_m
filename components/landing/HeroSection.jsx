@@ -41,10 +41,42 @@ export default function HeroSection() {
         window.open("https://sliceledger.io/event-du.html", '_blank',)
     }
     function schedulemeet() {
-        window.open("https://calendly.com/business-meet-dubai/30min?back=1&month=2023-07", '_blank')
+        window.open("https://calendly.com/business-meet-dubai/30min?back=1&month=2023-07", '_blank',)
     }
-    
-    
+    function knowMoreGitex() {
+        window.open("https://sliceledger.io/event-gitex.html", '_blank',)
+    }
+    function knowMoreIcbm() {
+        window.open("https://sliceledger.io/event-icbm.html", '_blank',)
+    }
+    function knowMoreGtis() {
+        window.open("https://sliceledger.io/event-gtis.html", '_blank',)
+    }
+    function knowMoreCedu() {
+        window.open("https://sliceledger.io/event-cedu.html", '_blank',)
+    }
+    function knowMoreFis() {
+        window.open("https://sliceledger.io/event-fis.html", '_blank',)
+    }
+    function knowMoreForex() {
+        window.open("https://sliceledger.io/event-forexexpo.html", '_blank',)
+    }
+    function knowMoreVibemart() {
+        window.open("https://sliceledger.io/event-vibemart.html", '_blank',)
+    }
+    function knowMoreFintech() {
+        window.open("https://sliceledger.io/event-finsurge.html", '_blank',)
+    }
+    function knowMoreTechspo() {
+        window.open("https://sliceledger.io/event-techspo.html", '_blank',)
+    }
+    function knowMoreBlokchain() {
+        window.open("https://sliceledger.io/event-bes.html", '_blank',)
+    }
+    function knowMoreWbs() {
+        window.open("https://sliceledger.io/event-wbs.html", '_blank',)
+    }
+
     return (
         <>
             <Slider {...settings}>
@@ -91,7 +123,7 @@ export default function HeroSection() {
                                                 </div>
                                                 <div className='d-flex'>
                                                     <img className='me-3' src="/images/calender.svg" alt="calender-icon" />
-                                                    <strong className='text-light'>5th Jun to 15th Jun 2023</strong>
+                                                    <strong className='text-light'>5th July to 15th July 2023</strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,9 +166,7 @@ export default function HeroSection() {
                                             <h1>Gitex Global</h1>
                                             <p>Join us at GITEX 2023 to ignite your blockchain journey. Schedule a meeting to identify how Sliceledger's integration into your business can accelerate growth.</p>
                                             <div className='action_btn_group'>
-                                                <Link href="/event-gitex.html" target='_blank'>
-                                                    <button >Know more</button>
-                                                </Link>
+                                                <button onClick={knowMoreGitex}>Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -168,7 +198,7 @@ export default function HeroSection() {
                                             <h1>Internatinal Crypto, Blockchain & Metaverse Expo</h1>
                                             <p>Embrace the future of blockchain with Sliceledger. Join us at ICBM 2023 in Dubai to learn about its benefits and integration opportunities.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreIcbm}>Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -200,7 +230,7 @@ export default function HeroSection() {
                                             <h1>Global Tech Innovation Summit</h1>
                                             <p>Join us at the Global Tech Innovation Summit 2023. Schedule a meeting to explore the blockchain future with Sliceledger.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreGtis}>Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -232,7 +262,7 @@ export default function HeroSection() {
                                             <h1>Crypto Expo Dubai 2023</h1>
                                             <p>Discover the next frontier of blockchain. Interact with the team of Sliceledger at Crypto Expo Dubai 2023. Schedule a meeting now!</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreCedu}>Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -254,39 +284,7 @@ export default function HeroSection() {
                     </section>
                 </div>
                 <div>
-                    <section className='heroSection world_metaverse_show'>
-                        <Container>
-                            <Row>
-                                <Col lg={8}>
-                                    <div className='content_area_wrapper'>
-                                        <div className='content_container'>
-                                            <div className='tag_line'>Powered by blockchain</div>
-                                            <h1>World Metaverse Show</h1>
-                                            <p>Australia, Are you ready to explore new tech innovations? Embrace future-ready technology solutions to bring revolution to your industry.</p>
-                                            <div className='action_btn_group'>
-                                                <button >Know more</button>
-                                                <button onClick={schedulemeet} >Schedule Now</button>
-                                            </div>
-                                            <div className='my-4'>
-                                                <div className='mb-2'>
-                                                    <ImLocation className='text-light me-3' />
-                                                    <strong className='text-light'>Duabi, UAE</strong>
-                                                </div>
-                                                <div className='d-flex'>
-                                                    <img className='me-3' src="/images/calender.svg" alt="calender-icon" />
-                                                    <strong className='text-light'>October 2023</strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col lg={4}></Col>
-                            </Row>
-                        </Container>
-                    </section>
-                </div>
-                <div>
-                    <section className='heroSection global_inovation'>
+                    <section className='heroSection future_global_inovation'>
                         <Container>
                             <Row>
                                 <Col lg={8}>
@@ -296,7 +294,7 @@ export default function HeroSection() {
                                             <h1>Future Innovation Summit</h1>
                                             <p>Secure your meeting with team Sliceledger at Future Innovation Summit 2023. Seize the opportunity and know more about Sliceledger Blockchain Protocol.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreFis} >Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -328,7 +326,7 @@ export default function HeroSection() {
                                             <h1>The Forex Expo</h1>
                                             <p>Schedule a meeting with the team of Sliceledger at the Forex Expo 2023 in Dubai. Learn how you can leverage Sliceledger for innovative business solutions.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreForex}>Know more</button>
                                                 <button onClick={schedulemeet} >Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -360,7 +358,7 @@ export default function HeroSection() {
                                             <h1>Vibe Martech Fest 2023</h1>
                                             <p>Meet with the team Sliceledger to see why this protocol is the best choice for blockchain development projects.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreVibemart} >Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -392,7 +390,7 @@ export default function HeroSection() {
                                             <h1>Fintech Surge 2023/ Northstar</h1>
                                             <p>Shape the future of Blockchain with Sliceledger. Meet us at Fintech Surge/Northstar 2023 to learn more about this transformative blockchain protocol.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreFintech}>Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -424,7 +422,7 @@ export default function HeroSection() {
                                             <h1>TECHSPO Dubai 2023</h1>
                                             <p>Connect with team Sliceledger at Techspo Dubai to explore this cutting-edge blockchain protocol. Schedule a meeting now to stay ahead of the curve.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreTechspo} >Know more</button>
                                                 <button onClick={schedulemeet} >Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -456,7 +454,7 @@ export default function HeroSection() {
                                             <h1>Blockchain Economy Dubai Summit</h1>
                                             <p>Australia, Are you ready to explore new tech innovations? Embrace future-ready technology solutions to bring revolution to your industry.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreBlokchain}>Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
@@ -488,7 +486,7 @@ export default function HeroSection() {
                                             <h1>World Blockchain Summit</h1>
                                             <p>Sliceledger at World Blockchain Summit 2023-Join us at WBS 2023 to discover how Sliceledger revolutionizes your industry.</p>
                                             <div className='action_btn_group'>
-                                                <button >Know more</button>
+                                                <button onClick={knowMoreWbs}>Know more</button>
                                                 <button onClick={schedulemeet}>Schedule Now</button>
                                             </div>
                                             <div className='my-4'>
