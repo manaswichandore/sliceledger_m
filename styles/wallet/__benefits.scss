@@ -1,0 +1,70 @@
+.benefits {
+    padding: 6em 0em;
+    z-index: 0;
+
+    .container {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+        padding-bottom: 4em;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            color: #ffffff;
+            font-size: 2.5em;
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    .content {
+        margin: 4em 2em 0em 2em;
+        text-align: center;
+
+        p {
+            color: #ffffff;
+            letter-spacing: 1px;
+            opacity: .8;
+            font-weight: 100;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .benefits {
+        padding: 2em 0em;
+    }
+    .benefits .container{
+        padding-bottom: 1em
+    }
+    .benefits .content {
+        margin: 1em 0em 0em 0em;
+    }
+    .benefits .content{
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .benefits .heading h2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .benefits .heading h2 {
+        font-size: 2em;
+    }
+    .benefits .content p{
+        margin-bottom: 0.5rem;   
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .benefits .heading h2 {
+        font-size: 1.5em;
+    }
+}

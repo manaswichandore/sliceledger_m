@@ -1,0 +1,67 @@
+.dashNav_wrap {
+    .navbar-white {
+        background-color: #fff;
+        color: #1f2d3d;
+    }
+
+    .main-header {
+        border-bottom: 1px solid #dee2e6;
+        z-index: 1034;
+    }
+
+    .navbar-expand {
+        -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .navbar {
+        position: relative;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .buy_Btn {
+        background: purple;
+        color: #fff;
+        padding: 3px 11px;
+        box-shadow: 0px 0px 5px 0px #00000069;
+        border-radius: 25px;
+    }
+
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 575px) {
+    .dashNav_wrap .btn-block{
+        position: relative;
+    }
+}
+@media (max-width: 991px) {
+    .bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .bar {
+        display: block;
+    }
+
+}

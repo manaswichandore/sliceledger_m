@@ -1,0 +1,51 @@
+.walletBanner_wrap {
+    padding: 50px 0px 50px;
+
+    .walletBanner_title {
+        text-align: center;
+
+        h2 {
+            display: inline-block;
+            color: #fff;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 1.5;
+            position: relative;
+            letter-spacing: 2px;
+
+            &::after {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                background-image: linear-gradient(to right, #ffffff2b, #ffffff, white, #ffffff, #ffffff2b);
+                content: "";
+                height: 2px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .walletBanner_wrap .walletBanner_title h2 {
+        font-size: 80px;
+    }
+
+    .walletBanner_wrap {
+        padding: 85px 0px 25px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .walletBanner_wrap .walletBanner_title h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .walletBanner_wrap .walletBanner_title h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}

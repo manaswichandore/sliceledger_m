@@ -1,0 +1,122 @@
+.aboutExtension_wrap {
+    padding: 50px 0px;
+    width: 100%;
+    background-color: #2425379e;
+
+    .row {
+        align-items: center;
+    }
+
+    .aboutExtension_content_wrap {
+        color: #fff;
+
+        .aboutExtension_content_title {
+            h4 {
+                margin: 0px;
+                position: relative;
+                display: inline-block;
+
+                // font-weight: 600;
+                &::after {
+                    height: 1px;
+                    width: 75px;
+                    background-color: #fff;
+                    content: "";
+                    position: absolute;
+                    right: -80px;
+                    top: 10px;
+                }
+            }
+
+            h3 {
+                font-weight: 600;
+                margin: 10px 0px;
+                font-size: 35px;
+            }
+        }
+
+        .aboutExtension_content {
+            a {
+                color: #00dfbc;
+                padding: 0px;
+            }
+
+            .download_div {
+                margin-top: 2em;
+                display: flex;
+                flex-wrap: wrap;
+                a {
+                    display: flex;
+                    align-items: center;
+                    // border: 1px solid #00dfbc;
+                    padding: .5em 2em;
+                    text-decoration: none;
+                    margin: 1em;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    color: #000;
+                    font-weight: bold;
+                    transition: all .5s;
+
+                    .icon_div{
+                        svg {
+                            font-size: 2.5em;
+                            margin-right: 0.3em;
+                        }
+                    }
+
+                    .content_div{
+                        .tag{
+                            font-size: 14px;
+                            margin-bottom: -5px;
+                        }
+                        .text{
+                            font-size: 20px;
+                        }
+                    }
+
+                    &:hover{
+                        background-color: #00dfbc;
+                    }
+
+
+
+                }
+            }
+        }
+    }
+
+    .slice_about_img_wrap {
+        text-align: center;
+
+        img {
+            width: 80%;
+            margin: 0px auto;
+        }
+    }
+}
+
+@media screen and (max-width :991px) {
+    .aboutExtension_wrap {
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .aboutExtension_wrap .row{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width :575px) {
+    .aboutExtension_content_wrap {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 447px){
+    .aboutExtension_wrap .aboutExtension_content_wrap .aboutExtension_content .download_div a{
+        width: 100%;
+        text-align: center;
+    }
+}

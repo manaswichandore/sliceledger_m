@@ -1,0 +1,81 @@
+@use '../utility/_button' as ButtonHover;
+
+.section4 {
+    // padding: 4em 0em;
+    
+    .container {
+        border-bottom: 1px solid;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .image_side {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 400px;
+
+        }
+    }
+
+    .content_side_wrapper {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        .content {
+            h2 {
+                color: #ffffff;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: 3em;
+            }
+
+            p {
+                color: #ffffff;
+                opacity: .8;
+                letter-spacing: 1px;
+            }
+
+            button {
+                letter-spacing: 1px;
+                font-weight: bold;
+                padding: .7em 2em .5em 2em;
+                border-radius: 25px;
+                border: 1px solid #01e0bb;
+                color: #06071b;
+                background-color: #01e0bb;
+                margin-top: 1em;
+
+                @include ButtonHover.BtnHoverEffect;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .section4 .row {
+        flex-direction: column-reverse;
+    }
+
+    .section4 .image_side img {
+        height: auto;
+        margin-bottom: 2em;
+    
+    }
+
+
+}
+
+@media screen and (max-width:564px) {
+
+    .section4 .image_side img {
+        height: auto;
+        margin-bottom: 2em;
+    }
+
+    .section4 .content_side_wrapper .content h2{
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,65 @@
+@import "./indexHeader.scss";
+@import "./indexBanner.scss";
+@import "./indexService.scss";
+@import "./indexKeyfeatures.scss";
+@import "./indexPea.scss";
+@import "./IndexRoadmap.scss";
+@import "./indexFAQ.scss";
+@import "./indexPartner.scss";
+@import "./indexContact.scss";
+@import "./indexFooter.scss";
+.sliceIndex_wrap {
+    background: #ffffffe6;
+
+    input {
+        border: 0;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .input-rounded {
+        border-radius: 50px;
+    }
+    .newsletter_form button {
+        padding: 7px 40px;
+        position: absolute;
+        right: 5px;
+        top: 4px;
+        .spinner-border{
+            --bs-spinner-width: 1rem;
+            --bs-spinner-height: 1rem;
+        }
+    }
+    .btn-info {
+        background: linear-gradient(45deg,#d31879,#911771);
+        height: auto;
+        line-height: normal;
+        padding: 12px 30px;
+        color: #fff;
+        border-radius: 40px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border: 1px solid #a30b9d;
+        transition: all 0.5s ease;
+        &:hover{
+            opacity: 0.9;
+            color: #fff;
+                border: 1px solid #911771;
+        }
+    }
+    .newsletter_form form {
+        position: relative;
+    }
+    .title_border h4 {
+        padding-bottom: 15px;
+        position: relative;
+    }
+    .title_default_light h4, .title_default_light p {
+        color: rgb(0, 0, 0);
+    }
+    .v_blue_pro .box_wrap h4, .v_blue_pro .box_wrap p, .v_dark .box_wrap h4, .v_dark .box_wrap p, .v_royal_blue .box_wrap h4, .v_royal_blue .box_wrap p, .v_navy_blue .box_wrap h4, .v_navy_blue .box_wrap p{
+        color: #000000;
+    }
+}

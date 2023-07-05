@@ -1,0 +1,26 @@
+.indexKeyfeatures_wrap {
+    padding: 50px 0px;
+
+    .btn.btn-radius {
+        border-radius: 40px;
+    }
+
+    .btn-default {
+        background-size: 200% auto;
+        border: 1px solid #911771;
+        color: #fff;
+        outline: none;
+        text-transform: uppercase;
+        z-index: 2;
+        transition: all 0.5s ease 0s;
+        padding: 10px 25px;
+        background: linear-gradient(45deg,#d31879,#911771);
+        transition: all 0.5s ease;
+
+        &:hover {
+            opacity: 0.9;
+        color: #fff;
+            border: 1px solid #911771;
+        }
+    }
+}

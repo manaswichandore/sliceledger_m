@@ -1,0 +1,77 @@
+.expectation {
+    padding: 6em 0em;
+    // background:linear-gradient(45deg, #2425379e, #2425379e), url('../../public/images/expectation.jpg');
+    background: url('../../public/images/expectation.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #2425379e;
+        // border-top-left-radius: 150px;
+        z-index: -1;
+    }
+
+    .heading {
+        text-align: center;
+
+        h2 {
+            color: #ffffff;
+            font-size: 2.5em;
+        }
+    }
+
+    .content {
+        margin: 4em 2em 0em 2em;
+        text-align: center;
+
+        h4 {
+            color: #01e0bb;
+        }
+
+        p {
+            color: #ffffff;
+            letter-spacing: 1px;
+            opacity: .8;
+            font-weight: 100;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .expectation .content {
+        margin: 1em 0em 0em 0em;
+    }
+
+    .expectation {
+        padding: 2em 0em;
+    }
+    .expectation .container .row {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .expectation .content {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 525px) {
+    .expectation .heading h2 {
+        font-size: 2em;
+    }
+    .expectation .content p{
+        margin-bottom: 0.5rem;  
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .expectation .heading h2 {
+        font-size: 1.5em;
+    }
+}

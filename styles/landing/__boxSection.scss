@@ -1,0 +1,103 @@
+.boxSection {
+    padding: 8em 0em;
+
+    .heading_area {
+        text-align: center;
+        margin-bottom: 2em;
+
+        h2 {
+            color: #ffffff;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #ffffff;
+            opacity: .8;
+            letter-spacing: 1px;
+        }
+    }
+
+    .outer_wrap {
+        text-align: center;
+        margin: 2em 0em;
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            margin-bottom: -5em;
+        }
+    }
+
+    // .row_wrap {
+    //     .col_wrap {
+    //         &:nth-child(3) {
+    //             .outer_wrap {
+    //                 .icon {
+    //                     width: 150px;
+    //                 }
+    //             }
+    //         }
+    //         &:nth-child(6){
+    //             .outer_wrap {
+    //                 .icon {
+    //                     width: 111px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    .box {
+        min-height: 300px;
+        z-index: -2;
+        background-color: rgba(255, 255, 255, 0.03);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
+        padding: 1em;
+        border-radius: 5px;
+        text-align: center;
+        margin: 1em;
+        overflow: hidden;
+        // top: -5em;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 100px;
+            margin-bottom: 1em;
+            margin-top: -3em;
+        }
+
+        .blur_img {
+            filter: blur(50px);
+        }
+
+
+        h4 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #ffffff;
+            opacity: .8;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width:1200px){
+    .boxSection .box{
+        min-height: 315px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .boxSection {
+        padding: 2em 0em 0em 0em;
+    }
+}

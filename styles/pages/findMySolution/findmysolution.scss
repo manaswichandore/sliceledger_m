@@ -1,0 +1,104 @@
+.wrapper_content {
+    min-height: 100%;
+    margin: 0 auto -99px;
+
+    .findMySolution_wrapper {
+        padding: 6em 0em;
+
+        .stepper_container {
+            // border: 1px solid;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            padding: 6em 2em;
+            // min-height: 500px;
+
+
+            .question_box_name {
+                padding: 4em;
+
+                .inputDiv {
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .stp_inner_btn {
+                    background: #edf2f4;
+                    color: #2b2d40;
+                    border: 1px solid #2b2d3f;
+                }
+
+                .stp_inner_btn.active{
+                    background: #2b2d40;
+                    color: #EDF2F4;
+                }
+            }
+
+            .welcome_image {
+                text-align: center;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .welcome_content {
+                display: flex;
+                height: 100%;
+                align-items: center;
+
+                .welcome_section {
+                    h2:nth-child(2) {
+                        margin-top: 1em;
+                    }
+
+                    button {
+                        border: none;
+                        font-size: 18px;
+                        padding: 10px 30px;
+                        color: #EDF2F4;
+                        background-color: #2B2D42;
+                        font-weight: 500;
+                        text-decoration: none;
+                        margin-top: 1em;
+
+                        &:hover {
+                            background: linear-gradient(45deg, #a30b9d, #7c14ef);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .stp_btn {
+        background-size: 200% auto;
+        /* border: 1px solid #911771; */
+        color: #fff;
+        outline: none;
+        text-transform: uppercase;
+        z-index: 2;
+        transition: all 0.5s ease;
+        padding: 10px 25px;
+        background: #2b2d41;
+
+        &:hover {
+            background: #2b2d41;
+            color: #fff;
+            opacity: 0.9;
+        }
+    }
+
+    .stp_btn:disabled {
+        color: #00000099;
+        background-color: #00000061;
+    }
+
+    // .Mui-disabled{
+    //     border: 1px solid #2b2d41;
+    //     background-color: #2b2d41;
+    //     color: #666666;
+    // } 
+}

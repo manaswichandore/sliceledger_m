@@ -1,0 +1,144 @@
+.ecosystem {
+    padding: 6em 0em;
+    background-image: url('../../public/images/glow-and-shap.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .container {
+        padding: 4em 0em;
+    }
+
+    .head {
+        margin-bottom: 4em;
+        position: relative;
+
+        svg {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+            top: -45px;
+            left: auto;
+        }
+
+        h2 {
+            color: #fff;
+            width: 45%;
+            position: relative;
+
+            // &::before {
+            //     content: '"';
+            //     position: absolute;
+            //     top: -50px;
+            //     left: -50px;
+            //     font-size: 4em;
+            //     font-weight: bold;
+            // }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 0%;
+                width: 100%;
+                height: 4px;
+                background-color: #fff;
+                background-image: linear-gradient(to bottom, #0AB2ED, #9756FE);
+            }
+        }
+    }
+
+    .box_wrapper {
+        display: flex;
+        justify-content: flex-end;
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 300px;
+            width: 60%;
+            text-align: center;
+            padding: 2em;
+            background-color: #242537;
+            box-shadow: 0px 0px 20px 4px #00b3eb;
+            border-radius: 10px;
+
+            h6 {
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+                opacity: .8;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .box_wrapper.one {
+        margin: 4em 2em 0em 2em;
+    }
+
+    .box_wrapper.two {
+        justify-content: flex-start;
+        margin: -4em 0em 0em 2em;
+    }
+
+    .box_wrapper.three {
+        margin-top: 4em;
+        margin-right: 6em;
+    }
+
+    .box_wrapper.four {
+        margin-top: -4em;
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .ecosystem .box_wrapper.one {
+        margin: 2em;
+    }
+
+    .ecosystem .box_wrapper.two {
+        margin: 2em;
+    }
+
+    .ecosystem .box_wrapper.three {
+        margin: 2em;
+    }
+
+    .ecosystem .box_wrapper.four {
+        margin: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ecosystem .box_wrapper .box {
+        width: 100%;
+    }
+
+    .ecosystem .head h2 {
+        width: 100%;
+    }
+
+    .ecosystem .container {
+        padding: 0px 12px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .ecosystem {
+        background-size: auto;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .ecosystem .head h2 {
+        width: auto;
+    }
+}

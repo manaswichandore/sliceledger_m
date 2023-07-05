@@ -1,0 +1,15 @@
+.roadmapBanner_wrap {
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(45deg, #d714ef, #1e151e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        color: #fff;
+        font-size: 38px;
+        font-weight: 600;
+    }
+}

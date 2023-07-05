@@ -1,0 +1,299 @@
+.roadMap {
+    padding: 4em 0em 6em 0em;
+
+    .top_head {
+        position: sticky;
+        top: 0px;
+        overflow: hidden;
+        background: #06071a;
+        background-image: url('../../public/images/implementation.png');
+        padding-top: 7em;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    // .container.head_container {
+    // }
+
+    .head {
+        text-align: center;
+        position: sticky;
+        top: 10px;
+
+        h2 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 2.5em;
+            margin-bottom: 2em;
+        }
+    }
+
+    .roadMap_inner_section {
+        // position: sticky;
+        // top: 0%;
+        display: block;
+
+
+        .phase_wrapper {
+            display: flex;
+            align-items: center;
+            height: 360px;
+            margin: 0em 2em;
+        }
+
+
+        .phase_1 {
+            width: 45%;
+
+            h5 {
+                color: #fff;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            .content_box {
+
+                background-color: #fff;
+                border: 2px solid rgb(137, 34, 255);
+                box-shadow: 0px 0px 25px rgb(137, 34, 255);
+                border-radius: 15px;
+                padding: 1em 6em;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 5%;
+                    left: -23%;
+                    width: 200px;
+                    height: 90%;
+                    background-color: rgb(137, 34, 255, 0.7);
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    // font-size: .9em;
+                    font-weight: bold;
+                    letter-spacing: .5px;
+                    color: rgb(137, 34, 255);
+                }
+
+                ul {
+                    margin: 0%;
+                    padding: 0%;
+
+                    li {
+                        line-height: 1.5;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .bar {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: calc(100% - 50%);
+                width: 20px;
+                height: 20px;
+                background-color: rgb(137, 34, 255);
+                border-radius: 50%;
+                border: 4px solid #fff;
+                box-shadow: 0px 0px 0px 10px #fff3;
+            }
+
+            .main_line {
+                background-color: rgb(137, 34, 255);
+                width: 2px;
+                height: 100%;
+            }
+        }
+
+        .date_box {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            h5 {
+                color: #fff;
+                letter-spacing: 1px;
+            }
+        }
+
+    }
+
+    .roadMap_slider {
+        // height: 400px;
+        overflow: hidden;
+    }
+
+
+    // ================================== Mobile RoadMap ==================================
+
+    .mobile_roadMap {
+        display: none;
+        // position: sticky;
+        // top: 0%;
+
+        .phase_wrapper {
+            display: flex;
+            align-items: center;
+            height: 360px;
+            margin: 0em 2em;
+        }
+
+
+        .phase_1 {
+            width: 90%;
+
+            h5 {
+                color: #fff;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            .content_box {
+
+                background-color: #fff;
+                border: 2px solid rgb(137, 34, 255);
+                box-shadow: 0px 0px 25px rgb(137, 34, 255);
+                border-radius: 15px;
+                padding: 1em 6em;
+                position: relative;
+                overflow: hidden;
+
+                // &::before {
+                //     content: '';
+                //     position: absolute;
+                //     bottom: 0%;
+                //     right: 0%;
+                //     width: 200px;
+                //     height: 90%;
+                //     background-color: rgb(137, 34, 255, 0.7);
+                //     border-radius: 50%;
+                // }
+
+                h5 {
+                    color: rgb(137, 34, 255);
+                }
+
+                h4 {
+                    // font-size: .9em;
+                    font-weight: bold;
+                    letter-spacing: .5px;
+                    color: rgb(137, 34, 255);
+                }
+
+                ul {
+                    margin: 0%;
+                    padding: 0%;
+
+                    li {
+                        line-height: 1.5;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .bar {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: calc(100% - 50%);
+                width: 20px;
+                height: 20px;
+                background-color: rgb(137, 34, 255);
+                border-radius: 50%;
+                border: 4px solid #fff;
+                box-shadow: 0px 0px 0px 10px #fff3;
+            }
+
+            .main_line {
+                background-color: rgb(137, 34, 255);
+                width: 2px;
+                height: 100%;
+            }
+        }
+
+        .date_box {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            h5 {
+                color: #fff;
+                letter-spacing: 1px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .roadMap_inner_section {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .mobile_roadMap {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .roadMap .mobile_roadMap .phase_1 .content_box {
+        padding: 1em 2em;
+    }
+
+    // .roadMap .mobile_roadMap .phase_1 .content_box::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0%;
+    //     right: -30% !important;
+    //     width: 50%;
+    //     height: 100%;
+    //     background-color: rgba(137, 34, 255, 0.7);
+    //     border-radius: 50%;
+    // }
+
+    .roadMap .mobile_roadMap .phase_wrapper {
+        margin: 4em 0em;
+    }
+
+    .roadMap .mobile_roadMap .bar .main_line {
+        height: 127%;
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+
+    .roadMap .mobile_roadMap .phase_wrapper {
+        margin: 6em 0em;
+    }
+
+    .roadMap .mobile_roadMap .bar .main_line {
+        height: 127%;
+    }
+}

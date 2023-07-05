@@ -1,0 +1,50 @@
+.indexFAQ_wrap {
+    padding: 100px 0px;
+
+    .accordion-header {
+        .accordion-button {
+            padding: 10px;
+
+            &:focus {
+                box-shadow: none;
+
+            }
+        }
+    }
+
+    .accordion{
+        .accordion-body{
+            word-break: break-word;
+        }
+    }
+
+    .indexFAQ_title {
+        text-align: center;
+
+        h3 {
+            margin-bottom: 60px;
+
+        }
+    }
+
+    .nav-pills {
+        .nav-link {
+            color: #d31879;
+            border: 1px solid #d31879;
+            margin-bottom: 10px;
+        }
+
+        .nav-link.active {
+            border: 1px solid #d31879;
+            color: #fff;
+            background-color: #d31879;
+        }
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: #d31879;
+    }
+
+
+}

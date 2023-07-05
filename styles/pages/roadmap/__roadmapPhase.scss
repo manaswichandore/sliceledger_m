@@ -1,0 +1,32 @@
+.roadmapPhase_main_wrap{
+    .roadmapPhase_wrap{
+        max-width: 600px;
+        margin: 0px auto;
+        .roadmapPhase_title{
+            background-color: #d714ef29;
+            padding: 20px;
+            max-width: 300px;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            h4{
+            margin: 0px;
+            }
+        }
+        .roadmapPhase_list{
+            border-radius: 20px;
+            background-color: #d714ef29;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            ul{
+                li{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+}

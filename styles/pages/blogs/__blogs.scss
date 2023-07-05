@@ -1,0 +1,100 @@
+.blogs {
+    padding: 4em 0em;
+
+    .head {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4em;
+
+        h2 {
+            width: fit-content;
+            color: #fff;
+            font-weight: bold;
+            font-size: 2.5em;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0%;
+                width: 100%;
+                height: 2px;
+                background-image: linear-gradient(74deg, rgba(151, 86, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(0, 179, 236, 0) 100%);
+            }
+        }
+    }
+
+    .all_blogs {
+        background-color: #111220;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 1em 0em;
+
+        .img_part {
+            img {
+                height: 225px;
+                // object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        .content_part {
+            padding: 2em;
+
+            h4 {
+                color: #fff;
+                font-weight: bold;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+
+            }
+
+            p {
+                color: #fff;
+                opacity: .8;
+                letter-spacing: 1px;
+                font-weight: 100;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            .read_more {
+                text-decoration: none;
+                color: #00dfbc;
+            }
+        }
+    }
+
+    .pagination_div {
+        display: flex;
+        justify-content: center;
+        padding: 1em 0em;
+        background: #11121f;
+        border-radius: 10px;
+        margin: 1em 0em;
+
+        button {
+            color: #fff;
+            opacity: .8;
+        }
+
+        button[aria-current="true"] {
+            background-color: #25262c;
+            opacity: 1;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .blogs .all_blogs .img_part img{
+        height: auto;
+    }
+}

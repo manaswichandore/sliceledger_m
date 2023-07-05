@@ -1,0 +1,45 @@
+.indexPea_wrap {
+    padding: 50px 0px;
+    overflow: hidden;
+
+    .chart_img {
+        width: 750px;
+    }
+
+    .color-burn {
+        background-color: #50b333 !important;
+    }
+
+    .chart_bx {
+        background-color: #ffffff;
+        display: inline-block;
+        margin-right: 5px;
+        height: 7px;
+        vertical-align: middle;
+        width: 7px;
+    }
+
+    .list_none {
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 14px;
+            font-weight: 500;
+            list-style: none;
+            span{
+                color: #000;
+            }
+            .color-sale {
+                background-color: #F8D011 !important;
+            }
+            .color2 {
+                background-color: #ec561b !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .indexPea_wrap .chart_img{
+        width:  100%;
+    }
+}

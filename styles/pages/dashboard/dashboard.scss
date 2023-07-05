@@ -1,0 +1,36 @@
+@import "./aside.scss";
+@import "./dashNav.scss";
+@import "./mainDash.scss";
+@import "./buy.scss";
+.modal-content{
+    background: #141f3e;
+    box-shadow: 0px 0px 12px #fe6dc4;
+    border-radius: 10px;
+}
+.modal-dialog{
+    max-width: 700px;
+}
+.dashboard_main_popup{
+    .modal-header{
+        padding: 0px;
+    }
+    .modal-body h2{
+        background: linear-gradient(68deg, #b400ff 3%, #0f999c 36%, #dba300 77%, #ff8800);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: blink 2s ease infinite;
+        font-size: 50px;
+    }
+    @keyframes blink {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}

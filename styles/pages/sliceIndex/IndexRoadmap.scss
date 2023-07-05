@@ -1,0 +1,39 @@
+.indexRoadmap_wrap {
+    .roadmap_inner_wrap {
+        background-color: #0e37460a;
+        .roadmap_title {
+            text-align: center;
+            padding-top: 50px;
+
+            h3 {
+                color: #000;
+            }
+        }
+
+        .roadmap_date h3 {
+            color: #000;
+        }
+    }
+
+    .roadmapPhase_main_wrap {
+        .roadmapPhase_wrap {
+            .roadmapPhase_list {
+                background-color: rgb(211 24 121 / 8%);
+            }
+            .roadmapPhase_title{
+                background-color: rgb(211 24 121 / 8%);
+            }
+        }
+    }
+    .roadmapDate_wrap {
+        .roadmapDate_line{
+            &::after{
+                background: #d31879;
+            }
+            &::before{
+                background: #d31879;
+            }
+       }
+    }
+
+}

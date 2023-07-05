@@ -1,0 +1,212 @@
+.login_container {
+    .signup_title {
+        text-align: center;
+
+        h2 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 100px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+
+            &::after {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                background-image: linear-gradient(to right, #ffffff2b, #ffffff, white, #ffffff, #ffffff2b);
+                content: "";
+                height: 4px;
+                width: 100%;
+            }
+        }
+    }
+
+    .signup_wrapper {
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        border-radius: 20px;
+        background-color: #fff;
+
+        .login_image_div {
+            img {
+                border-radius: 20px 0px 0px 20px;
+            }
+        }
+
+
+        .login_div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            padding: 2em 2em 2em 1em;
+            position: relative;
+
+            .loader_div {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                backdrop-filter: blur(3px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+            }
+
+            .response_message {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255 255 255 / 80%);
+                backdrop-filter: blur(3px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+
+                .message_text {
+
+                    .text {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+
+                    .icon_div {
+                        display: flex;
+                        justify-content: center;
+                        height: 100px;
+
+                        svg {
+                            font-size: 4em;
+                            color: #00bf00;
+                        }
+                    }
+
+                    .icon_div.error {
+                        display: flex;
+                        justify-content: center;
+                        height: 100px;
+
+                        svg {
+                            font-size: 4em;
+                            color: red;
+                        }
+                    }
+                }
+            }
+
+            .login_form {
+                .login_form_heading {
+                    h3 {
+                        font-weight: 600;
+                        font-size: 50px;
+                        margin: 0px;
+                        color: #373634;
+                    }
+
+                    p {
+                        color: #6f6f6fcc;
+                    }
+                }
+
+                .field_wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #2b2d40;
+                    margin-bottom: 30px;
+
+                    .eye_btn {
+                        cursor: pointer;
+                    }
+
+                    label {
+                        margin-bottom: 0px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        width: 20%;
+                        color: #373634;
+                    }
+
+                    input {
+                        width: 80%;
+                        border: none;
+                        font-size: 14px;
+                        border-radius: 0px;
+
+                        &:active,
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                }
+
+                .form-check-input {
+                    margin-top: 3px;
+                    width: 0.8em;
+                    height: 0.8em;
+                }
+
+                .form-check-label {
+                    color: #6f6f6fcc;
+                }
+
+                .signup_btn_div {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    button {
+                        margin-top: 1em;
+                        color: #edf2f4;
+                        text-decoration: none;
+                        font-weight: 500;
+                        padding: 12px 70px 7px;
+                        border-radius: 25px;
+                        background-color: #8C5EFE;
+                        border: none;
+                        text-transform: uppercase;
+                        box-shadow: 0px 0px 15px rgb(140 94 254 / 72%);
+                    }
+                }
+            }
+
+            .signup_social_btns_main {
+                margin-top: 30px;
+
+                p {
+                    color: rgba(111, 111, 111, 0.8);
+                }
+
+                .signup_social_btns_wrap {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+
+                    .signup_social_btns {
+                        background-color: #000;
+                        height: 45px;
+                        width: 45px;
+                        text-align: center;
+                        border-radius: 50%;
+                        line-height: 45px;
+                        margin-right: 50px;
+
+                        svg {
+                            color: #fff;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

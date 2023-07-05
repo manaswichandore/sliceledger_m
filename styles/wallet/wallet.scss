@@ -1,0 +1,12 @@
+@import "./walletBanner.scss";
+@import "./aboutExtension.scss";
+@import "./_goals";
+@import "./_expectation";
+@import "./_benefits";
+
+.wallet_main_wrap {
+    background: url("../../public/images/walletBanner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    // padding: 0px 0px;
+}

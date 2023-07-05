@@ -1,0 +1,146 @@
+@use '../utility/_button' as ButtonHover;
+.contactUs_wrap {
+    background: url("../../public/images/transparent.png");
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+
+    .contactUs_title {
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+
+        h3 {
+            color: #01e0bb;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            display: inline-block;
+            color: #fff;
+            font-weight: 600;
+            font-size: 70px;
+            line-height: 100px;
+            position: relative;
+            letter-spacing: 2px;
+
+            &::after {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0.168627451), #ffffff, white, #ffffff, rgba(255, 255, 255, 0.168627451));
+                content: "";
+                height: 2px;
+                width: 100%;
+            }
+        }
+    }
+
+    .contactUs_content_wrap {
+        // background: #2425379e;
+        padding: 50px 0px;
+
+      .row{
+        background-color: #1e20289c;
+        border-radius: 15px;
+      }
+
+        .contect_form_title {
+            h3 {
+                color: #01e0bb;
+                font-weight: 600;
+                font-size: 22px;
+            }
+        }
+
+        .company_info_wrap_div{
+            display: flex;
+            height: 100%;
+        }
+
+        .company_info_wrap {
+            color: #fff;
+            // background-color: #23262f;
+            padding: 3em 2em;
+
+            .contact_no{
+                a{
+                    text-decoration: none;
+                    color: #01e0bb;
+                }
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0px;
+            }
+        }
+
+        .contect_form_wrap {
+            // background-color: #23262f;
+            padding: 3em 2em;
+
+            form {
+                label {
+                    color: #fff;
+                    font-size: 14px;
+                }
+
+                .form-control {
+                    background-color: #35363fad;
+                    color: #fff;
+                    border: none;
+                    
+
+                    &:focus {
+                        box-shadow: none;
+                        border-color: #fff;
+                    }
+                }
+
+                .form_btn {
+                    box-shadow: none;
+                    background-color: #01e0bb;
+                    border-color: #01e0bb;
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 10px 20px 8px;
+                    @include ButtonHover.BtnHoverEffect;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contactUs_wrap .contactUs_title h2 {
+        font-size: 50px;
+    }
+
+    .contactUs_wrap .contactUs_content_wrap .contect_form_wrap{
+        padding: 3em 0em;
+    }
+
+    .contactUs_wrap .contactUs_content_wrap .company_info_wrap {
+        padding: 1em 0em 2em 0em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contactUs_wrap .contactUs_title h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .contactUs_wrap .contactUs_title {
+        margin-bottom: 10px;
+    }
+}
